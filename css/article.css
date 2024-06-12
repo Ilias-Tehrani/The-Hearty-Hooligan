@@ -1,0 +1,163 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color:#EF3F37;
+    --second-color:#2F4858;
+    --text-color:black;
+    --accent-color:#DFEC508c;
+    --articletext-color:whitesmoke;
+}
+
+:root.dark-mode {
+    --main-color: #EF3F37;
+    --second-color: lightgrey; 
+    --text-color: black;
+    --accent-color: #DFEC508c;
+    --articletext-color:black;
+}
+
+header {
+    background-color: var(--main-color);
+}
+
+body {
+    background-color: var(--second-color);
+}
+
+header nav {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header nav a {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+header nav a:nth-child(2) {
+    max-height: 80px;
+    max-width: 160px;
+    position: absolute;
+    background-color: var(--main-color);
+    top:0.1rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+header nav a:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+header nav button {
+    justify-self: end;
+    border: none;
+}
+
+
+header nav button img {
+    max-width: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+button {
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+    
+h2 {
+    margin-left: 20px;
+}
+
+h2 span {
+    background-color: var(--accent-color);
+    padding: 4px;
+}
+
+h3 {
+    margin-left: 20px;
+    color: var(--articletext-color);
+    margin-top: 8px;
+}
+.quate {
+    font-style: italic;
+}
+
+main img {
+    max-width: 90%;
+    margin: auto;
+    display: block;
+    margin-top: 1rem;
+}
+
+.eend {
+    margin-top: -1rem;
+}
+
+p {
+    margin: 2rem;
+    margin-left: 20px;
+    color: var(--articletext-color);
+}
+
+.info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.rassen {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 10px;
+    margin-top: 80px;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-items: center;
+}
+
+footer ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    max-width: 35px;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+div.animation {
+    max-width: 40px;
+}
+
+@media screen and (min-width: 700px) {
+
+    main p, h1, h2, h3 {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}

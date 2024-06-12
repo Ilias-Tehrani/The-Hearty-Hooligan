@@ -1,0 +1,325 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color:#EF3F37;
+    --second-color:#2F4858;
+    --text-color:black;
+    --accent-color:#DFEC508c;
+}
+
+:root.dark-mode {
+    --main-color: #EF3F37;
+    --second-color: lightgrey; 
+    --text-color: black;
+    --accent-color: #DFEC508c;
+}
+
+button {
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+header {
+    background-color: var(--main-color);
+}
+
+body {
+    background-color: var(--second-color);
+}
+
+main {
+    margin: 16px;
+}
+
+header nav {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header nav a {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+header nav a:nth-child(2) {
+    max-height: 80px;
+    max-width: 160px;
+    position: absolute;
+    background-color: var(--main-color);
+    top:0.1rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+header nav a:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+header nav button {
+    justify-self: end;
+    border: none;
+}
+
+header nav button img {
+    max-width: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+section.hero {
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+main a:nth-child(1) img {
+    max-width: 380px;
+    margin-left: 10px;
+}
+
+main article h2 div span {
+    background-color: var(--accent-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    padding: 3px;
+}
+
+main article {
+    position: relative;
+    max-width: fit-content;
+}
+
+.top-left {
+    position: absolute;
+    top: 5rem;
+    left: 6rem;
+}
+
+.boeren1 {
+    font-size: 1.5rem;
+}
+
+.boeren2 {
+    position: absolute;
+    top: 1.7rem;
+    left: 0rem;
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-right: 5px;
+    font-size: 1.7rem;
+
+}
+
+.boeren2_1 {
+    position: absolute;
+    top: 1.7rem;
+    left: 4.6rem;
+    font-size: 1.5rem;
+
+}
+
+.boeren3 {
+    position: absolute;
+    top: 3.6rem;
+    left: 0rem;
+    font-size: 1.5rem;
+}
+
+.bottem-right {
+    position: absolute;
+    bottom: 4rem;
+    right: 1.5rem;
+    padding: 3px;
+}
+
+.boeren4 {
+    position: absolute;
+    bottom: 2rem;
+    right: 0.2rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.boeren5 {
+    position: absolute;
+    bottom: 0rem;
+    right: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 10px 0;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.slider-container .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slider-container .card {
+    min-width: 60vw;
+    height: 100%;
+    margin: 0 15px;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; 
+}
+
+.slider-container .prev, 
+.slider-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.slider-container .prev {
+    left: 0;
+}
+
+.slider-container .next {
+    right: 0;
+}
+
+.eend {
+    max-height: 300px;
+}
+
+.vrouw2 {
+    max-height: 300px;
+}
+
+.hond {
+    max-height: 260px;
+}
+
+h3 {
+    position: absolute;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    margin-top: 40px;
+    padding: 3px;
+}
+
+.waterballet {
+    margin-left: 60px;
+    margin-right: -80px;
+    margin-top: 31px;
+}
+
+.hondtitle {
+    margin-right: -200px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 10px;
+    margin-top: 80px;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-items: center;
+}
+
+footer ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    max-width: 35px;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+div.animation {
+    max-width: 40px;
+}
+
+.gallery {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+
+    main a:nth-child(1) img{
+        max-width: 650px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    main a:nth-child(1) img {
+        max-width: 550px;
+    }
+
+    .hond{
+        max-width: 250px;
+    }
+
+    .vrouw2 {
+        max-width: 300px;
+    }
+
+    .slider-container {
+        display: none;
+    }
+
+    .gallery {
+        display: block;
+    }
+
+    .top-left * {
+        font-size: 1.8rem;
+    }
+
+    section.hero {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .waterballet{
+        left: 190px;
+        top: 84px;
+    }
+
+    .hondtitle span:nth-child(2){
+        top: 150px;
+    }
+}

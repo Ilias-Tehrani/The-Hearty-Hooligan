@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+    <head>
+        <title>Aanmeldingsformulier</title>
+        <link href="css/formulier.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="author" content="ilias tehrani">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>Meld je aan</h1>
+                <a class="current-page" href="index.html"><img src="img/the_hearty_hooligan.png" alt=""></a>
+                <button id="mode-toggle"><img src="img/skull-bolt-svgrepo-com.png" alt=""></button>
+            </nav>
+        </header>
+        <main>
+            <form action="https://url-naar-script" method="post">
+     
+                <p>persoonlijke gegevens</p>
+                <label>voor naam
+                    <input type="text" name="voornaam" required>
+                </label>
+                <label>achter naam
+                    <input type="text" name="achternaam" required>
+                </label>
+                <label>geboortedatum
+                    <input type="text" name="geboortedatum" required>
+                </label>
+                <p>contactgegevens</p>
+                <label>e-mail
+                    <input type="text" name="e-mail" required>
+                </label>
+                <label>telefoonumer
+                    <input type="text" name="telefoonumer" required>
+                </label>
+                <label>straat
+                    <input type="text" name="straat" required>
+                </label>
+                <label>huis nummer
+                    <input type="text" name="huisnumer" required>
+                </label>
+                <label>postcode
+                    <input type="text" name="postcode" required>
+                </label>
+                <label>gemeente
+                    <input type="text" name="gemeente" required>
+                </label>
+                    <label for="land">land</label> 
+                    <select name="land" id="land">
+                        <option selected disabled>Maak uw keuze</option>
+                        <option value="option_1">Alpakistan</option>
+                        <option value="option_2">België</option>
+                        <option value="option_3">Chacamaka</option>
+                        <option value="option_4">duitsland</option>
+                        <option value="option_5">engeland</option>
+                        <option value="option_6">Ander</option>
+                    </select>
+                    <label for="functie">functie</label> 
+                    <select name="functie" id="functie">
+                        <option selected disabled>welke functie heeft u</option>
+                        <option value="option_1">werknemer</option>
+                        <option value="option_2">werkgever</option>
+                        <option value="option_3">studdent</option>
+                        <option value="option_4">ander</option>
+                    </select>
+                    
+                    <label class="roddels" for="question">
+                        give us big roddels. 
+                    </label>
+                    <textarea id="question" maxlength="10000">
+                    </textarea>
+                    <input type="submit" >
+            </form>                 
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="instagram"><img class="icon" src="img/insta-svgrepo-com.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="facebook"><img class="icon" src="img/facebook-svgrepo-com.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="index.html"><img class="logo" src="img/the_hearty_hooligan.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="twitter"><img class="icon" src="img/twitter-svgrepo-com.png" alt=""></a>
+                </li>
+                <li>
+                    <img class="icon" src="img/no-photo-svgrepo-com.png" alt="">
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
